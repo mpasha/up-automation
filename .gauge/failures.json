@@ -1,0 +1,10 @@
+{
+	"Args": [
+		"run",
+		"--parallel",
+		"--env",
+		"firefox",
+		"--dir=C:\\Users\\Mehraj Pasha\\Documents\\Projects\\guage\\up-automation"
+	],
+	"FailedItems": []
+}

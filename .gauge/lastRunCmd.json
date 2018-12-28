@@ -1,0 +1,9 @@
+[
+	"gauge",
+	"run",
+	"--parallel",
+	"--env",
+	"firefox",
+	"--dir=C:\\Users\\Mehraj Pasha\\Documents\\Projects\\guage\\up-automation",
+	"C:\\Users\\Mehraj Pasha\\Documents\\Projects\\guage\\up-automation\\specs\\ui"
+]

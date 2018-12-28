@@ -1,0 +1,77 @@
+11:32:42.520 Watching directory: C:\Users\Mehraj Pasha\Documents\Projects\examples\up-automation\specs
+11:32:42.525 Found 1 files
+11:32:42.525 Watching directory: C:\Users\Mehraj Pasha\Documents\Projects\examples\up-automation\specs\ui
+11:32:42.526 Found 2 files
+11:32:42.528 Initializing concepts cache with 0 concepts
+11:32:42.534 Initializing specs cache with 2 specs
+11:32:42.534 Adding specs from C:\Users\Mehraj Pasha\Documents\Projects\examples\up-automation\specs\ui\knowledge_graph.spec
+11:32:42.534 Adding specs from C:\Users\Mehraj Pasha\Documents\Projects\examples\up-automation\specs\ui\knowledge_graph2.spec
+11:32:42.534 Initializing steps cache with 2 steps
+11:32:42.535 Gauge daemon initialized and listening on port: 51565
+14:56:45.742 Watching directory: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs
+14:56:45.742 Found 1 files
+14:56:45.742 Watching directory: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui
+14:56:45.742 Found 2 files
+14:56:45.747 Initializing concepts cache with 0 concepts
+14:56:45.749 Initializing specs cache with 2 specs
+14:56:45.749 Adding specs from C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui\knowledge_graph.spec
+14:56:45.749 Adding specs from C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui\knowledge_graph2.spec
+14:56:45.749 Initializing steps cache with 2 steps
+14:56:45.749 Gauge daemon initialized and listening on port: 54227
+15:22:57.306 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"The knowledge graph box should show \"Jupiter\" as result" > 
+15:22:57.309 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"The knowledge graph box should show {} as result" parameterizedStepValue:"The knowledge graph box should show <Jupiter> as result" parameters:"Jupiter" > > 
+15:22:57.322 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to \"https://www.google.co.in\"" > 
+15:22:57.322 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to {}" parameterizedStepValue:"Navigate to <https://www.google.co.in>" parameters:"https://www.google.co.in" > > 
+15:22:57.327 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to <https://www.google.co.in>" > 
+15:22:57.327 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to {}" parameterizedStepValue:"Navigate to <https://www.google.co.in>" parameters:"https://www.google.co.in" > > 
+15:22:57.328 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to <https://www.google.co.in>" > 
+15:22:57.328 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to {}" parameterizedStepValue:"Navigate to <https://www.google.co.in>" parameters:"https://www.google.co.in" > > 
+15:22:57.328 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Enter query <query> in the search box and submit" > 
+15:22:57.328 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Enter query {} in the search box and submit" parameterizedStepValue:"Enter query <query> in the search box and submit" parameters:"query" > > 
+15:22:57.329 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"The knowledge graph box should show <query> as result" > 
+15:22:57.329 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"The knowledge graph box should show {} as result" parameterizedStepValue:"The knowledge graph box should show <query> as result" parameters:"query" > > 
+15:22:57.335 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Enter query \"query\" in the search box and submit" > 
+15:22:57.335 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Enter query {} in the search box and submit" parameterizedStepValue:"Enter query <query> in the search box and submit" parameters:"query" > > 
+16:13:53.509 Spec file removed: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui\knowledge_graph2.spec
+16:13:53.511 Spec file added / modified: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui\knowledge_graph2.spec
+13:06:55.568 Watching directory: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs
+13:06:55.569 Found 1 files
+13:06:55.569 Watching directory: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui
+13:06:55.569 Found 2 files
+13:06:55.572 Initializing concepts cache with 0 concepts
+13:06:55.574 Initializing specs cache with 2 specs
+13:06:55.574 Adding specs from C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui\knowledge_graph2.spec
+13:06:55.574 Adding specs from C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui\knowledge_graph.spec
+13:06:55.574 Initializing steps cache with 2 steps
+13:06:55.574 Gauge daemon initialized and listening on port: 61075
+14:25:36.199 Killing Gauge daemon. Parent process with pid 1968 has terminated.
+16:02:56.356 Watching directory: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs
+16:02:56.357 Found 1 files
+16:02:56.357 Watching directory: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui
+16:02:56.357 Found 2 files
+16:02:56.369 Initializing concepts cache with 0 concepts
+16:02:56.380 Initializing specs cache with 2 specs
+16:02:56.380 Adding specs from C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui\knowledge_graph.spec
+16:02:56.380 Adding specs from C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui\knowledge_graph2.spec
+16:02:56.380 Initializing steps cache with 2 steps
+16:02:56.380 Gauge daemon initialized and listening on port: 55352
+16:03:14.735 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to \"https://www.google.co.in\"" > 
+16:03:14.765 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to {}" parameterizedStepValue:"Navigate to <https://www.google.co.in>" parameters:"https://www.google.co.in" > > 
+16:03:14.768 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to \"https://www.google.co.in\"" > 
+16:03:14.772 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to {}" parameterizedStepValue:"Navigate to <https://www.google.co.in>" parameters:"https://www.google.co.in" > > 
+16:03:14.919 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to <https://www.google.co.in>" > 
+16:03:14.919 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to {}" parameterizedStepValue:"Navigate to <https://www.google.co.in>" parameters:"https://www.google.co.in" > > 
+16:03:14.920 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Navigate to <https://www.google.co.in>" > 
+16:03:14.921 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Navigate to {}" parameterizedStepValue:"Navigate to <https://www.google.co.in>" parameters:"https://www.google.co.in" > > 
+16:03:14.951 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Enter query \"query\" in the search box and submit" > 
+16:03:14.951 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Enter query {} in the search box and submit" parameterizedStepValue:"Enter query <query> in the search box and submit" parameters:"query" > > 
+16:03:14.955 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"Enter query <query> in the search box and submit" > 
+16:03:14.955 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"Enter query {} in the search box and submit" parameterizedStepValue:"Enter query <query> in the search box and submit" parameters:"query" > > 
+16:03:14.959 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"The knowledge graph box should show \"Jupiter\" as result" > 
+16:03:14.959 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"The knowledge graph box should show {} as result" parameterizedStepValue:"The knowledge graph box should show <Jupiter> as result" parameters:"Jupiter" > > 
+16:03:14.970 Api Request Received: messageType:GetStepValueRequest messageId:4 stepValueRequest:<stepText:"The knowledge graph box should show <query> as result" > 
+16:03:14.971 Sending API response: messageType:GetStepValueResponse messageId:4 stepValueResponse:<stepValue:<stepValue:"The knowledge graph box should show {} as result" parameterizedStepValue:"The knowledge graph box should show <query> as result" parameters:"query" > > 
+10:23:04.197 Watching directory: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\api
+10:23:04.222 Found 0 files
+10:23:12.128 Spec file removed: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\ui\knowledge_graph2.spec
+10:23:12.129 Spec file added / modified: C:\Users\Mehraj Pasha\Documents\Projects\guage\up-automation\specs\api\knowledge_graph2.spec
