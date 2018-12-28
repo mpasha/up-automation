@@ -43,7 +43,7 @@ public class DriverFactory {
             case "IE":
                 InternetExplorerDriverManager.getInstance().setup();
                 return new InternetExplorerDriver();
-            case "Firefox":
+            case "FIREFOX":
                 FirefoxDriverManager.getInstance().setup();
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
@@ -51,7 +51,7 @@ public class DriverFactory {
                 }
 
                 return new FirefoxDriver(firefoxOptions);
-            case "Chrome":
+            case "CHROME":
             default:
                 ChromeDriverManager.getInstance().setup();
 
@@ -76,6 +76,7 @@ public class DriverFactory {
                     FirefoxOptions firefoxOptions = new FirefoxOptions();
                     if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
                         firefoxOptions.addArguments("--headless");
+                        firefoxOptions.addArguments("--disable-gpu");
                     }
                     driver = new RemoteWebDriver(new URL(URL), firefoxOptions);
                 case "CHROME":
