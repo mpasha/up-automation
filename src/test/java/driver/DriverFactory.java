@@ -23,10 +23,10 @@ public class DriverFactory {
 //    private static final String AUTOMATE_KEY = System.getenv("BROWSERSTACK_ACCESS_KEY");
 //    private static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 
-    private static final String URL = System.getenv("REMOTE_URL");;
-    private WebDriver driver;
+    private static final String URL = System.getenv("REMOTE_URL");
+    private static WebDriver driver;
 
-    public WebDriver getDriver() {
+    public static WebDriver getDriver() {
 
         String browser = System.getenv("BROWSER");
         String location = System.getenv("LOCATION");
@@ -38,14 +38,19 @@ public class DriverFactory {
             return setUpRemote(browser);
     }
 
-    public WebDriver setUpLocal(String browser) {
+    public static WebDriver setUpLocal(String browser) {
         switch (browser) {
             case "IE":
                 InternetExplorerDriverManager.getInstance().setup();
                 return new InternetExplorerDriver();
             case "Firefox":
                 FirefoxDriverManager.getInstance().setup();
-                return new FirefoxDriver();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
+                    firefoxOptions.addArguments("--headless");
+                }
+
+                return new FirefoxDriver(firefoxOptions);
             case "Chrome":
             default:
                 ChromeDriverManager.getInstance().setup();
@@ -60,27 +65,35 @@ public class DriverFactory {
         }
     }
 
-    public WebDriver setUpRemote(String browser) {
+    public static WebDriver setUpRemote(String browser) {
         try {
             DesiredCapabilities desiredCapabilities;
             switch (browser) {
                 case "IE":
                     InternetExplorerDriverManager.getInstance().setup();
-                    this.driver = new InternetExplorerDriver();
+                    driver = new InternetExplorerDriver();
                 case "FIREFOX":
-                    desiredCapabilities = DesiredCapabilities.firefox();
-                    this.driver = new RemoteWebDriver(new URL(URL), desiredCapabilities);
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+                    if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
+                        firefoxOptions.addArguments("--headless");
+                    }
+                    driver = new RemoteWebDriver(new URL(URL), firefoxOptions);
                 case "CHROME":
                 default:
-                    desiredCapabilities = DesiredCapabilities.chrome();
-                    this.driver = new RemoteWebDriver(new URL(URL), desiredCapabilities);
+                    ChromeOptions options = new ChromeOptions();
+                    if ("Y".equalsIgnoreCase(System.getenv("HEADLESS"))) {
+                        options.addArguments("--headless");
+                        options.addArguments("--disable-gpu");
+                    }
+//                    desiredCapabilities = DesiredCapabilities.chrome();
+//                    desiredCapabilities.setVersion(System.getenv("BROWSER_VERSION"));
+                    driver = new RemoteWebDriver(new URL(URL), options);
             }
-
-            this.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         } catch (MalformedURLException e) {
             System.out.println(e.toString());
         }
-        return this.driver;
+        return driver;
     }
 }

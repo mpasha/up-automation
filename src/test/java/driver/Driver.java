@@ -15,8 +15,7 @@ public class Driver {
     // Since this does not have a significance in the application's business domain, the BeforeSuite hook is used to instantiate the webDriver
     @BeforeSuite
     public void initializeDriver(){
-        DriverFactory df = new DriverFactory();
-        webDriver = df.getDriver();
+        webDriver = DriverFactory.getDriver();
     }
 
     // Close the webDriver instance
